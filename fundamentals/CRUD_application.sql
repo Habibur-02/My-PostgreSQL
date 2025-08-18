@@ -91,4 +91,75 @@ select * from student;
 
 select age from student
 order by age asc;
+-- Aggrigate function 
+
+select count(*) from student;
+select avg(age) from student;
+
+select department, count(*) from student group by department;
+
+select * from employee;
+
+select count(*) from employee;
+select avg(salary) from employee;
+select salary, count(*) from employee group by salary;
+
+select position, count(*) from employee group by position;
+
+create table courses(
+    student_id serial primary key,
+    course_name varchar(15) not null,
+    course_id int not null
+);
+
+insert into courses( course_name, course_id)
+values ('OOP', 1201),
+        ('ISA', 4109),
+        ('CD',4101),
+        ('CA',3101),
+        ('OS',3201),
+        ('AI',3205);
+select * from courses;
+select * from student;
+
+select student.age, student.id, student.department from student
+join courses on courses.course_id=student.id;
+
+select * from courses;
+
+-- SELECT student.age, student.id, student.department, courses.* 
+-- FROM student
+-- JOIN courses ON courses.course_id = student.id;
+
+-- select * from courses;
+select student.* , courses.* from student
+join courses on student.id=courses.student_id;
+
+select name from student
+where id in(
+    select id from student where department='CE'
+);
+
+select * from student;
+
+
+-- View Function
+
+create view cse_students as 
+select * from student where department='CSE';
+
+-- excersize
+select * from employee;
+create view position_table as
+select * from employee where position='Stuff';
+
+select * from cse_students;
+select * from position_table;
+
+
+
+CREATE INDEX idx_department ON student(department);
+
+select department , count(*) from student group  by department
+having count(*)=1;
 
