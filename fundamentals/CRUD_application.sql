@@ -163,3 +163,22 @@ CREATE INDEX idx_department ON student(department);
 select department , count(*) from student group  by department
 having count(*)=1;
 
+with cte as 
+(
+    select salary, count(*) as total from employee group by salary
+)
+
+select * from cte where total>=1;
+
+select * from employee;
+
+create table user_data(
+    id serial primary key,
+    info JSONB
+);
+insert into user_data(info)
+values ('{"name": "Aasif","skills":["C++","Python"]}'),
+ ('{"name": "Rafi", "skills": ["SQL", "Python"]}');
+
+
+select * from user_data;
