@@ -16,6 +16,8 @@ CREATE TABLE IF NOT EXISTS employeee(
     salary INT
 );
 
+-- aasif
+
 -- select * from employee;
 -- select * from student;
 -- describe std;
