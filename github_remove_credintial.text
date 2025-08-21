@@ -1,0 +1,4 @@
+git rm --cached .vscode/settings.json # here i want to remove .vscode/settings.json folder and file
+git commit -m "Removed sensitive file"
+git push
+
