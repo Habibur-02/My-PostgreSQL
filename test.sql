@@ -15,3 +15,7 @@ values (20,'CSE', 'hizly singra','Aasif'),
 SELECT * FROM studentss;
 SELECT * from studentss
 WHERE department='Aasif';
+
+SELECT name FROM studentss
+WHERE age=20;
+
