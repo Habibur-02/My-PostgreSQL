@@ -1,0 +1,111 @@
+
+CREATE TABLE custome(
+    id serial primary key,
+    name varchar(50),
+    position varchar(10),
+    experience int not null,
+    address text,
+    phone bigint, -- Using bigint for phone numbers to prevent overflow
+    email text,
+    salary int
+);
+
+INSERT INTO custome (name, position, experience, address, phone, email, salary) VALUES
+('John Doe', 'Manager', 12, '123 Main St, Anytown', '1234567890', 'john.doe@email.com', 85000),
+('Jane Smith', 'Analyst', 5, '456 Oak Ave, Anytown', '1234567891', 'jane.smith@email.com', 65000),
+('Peter Jones', 'Engineer', 8, '789 Pine Ln, Anytown', '1234567892', 'peter.jones@email.com', 92000),
+('Sarah Lee', 'Director', 18, '101 Maple Blvd, Anytown', '1234567893', 'sarah.lee@email.com', 150000),
+('Michael Chen', 'Manager', 15, '202 Birch Dr, Anytown', '1234567894', 'michael.chen@email.com', 110000),
+('Emily White', 'Analyst', 3, '303 Cedar Rd, Anytown', '1234567895', 'emily.white@email.com', 58000),
+('Chris Davis', 'Engineer', 10, '404 Willow Ct, Anytown', '1234567896', 'chris.davis@email.com', 95000),
+('Jessica Brown', 'Specialist', 7, '505 Poplar Pl, Anytown', '1234567897', 'jessica.brown@email.com', 75000),
+('David Wilson', 'Director', 22, '606 Spruce St, Anytown', '1234567898', 'david.wilson@email.com', 200000),
+('Laura Evans', 'Engineer', 6, '707 Elm St, Anytown', '1234567899', 'laura.evans@email.com', 88000),
+('Robert Thomas', 'Manager', 14, '808 Aspen Way, Anytown', '1234567900', 'robert.thomas@email.com', 105000),
+('Nancy Hall', 'Analyst', 4, '909 Fir Rd, Anytown', '1234567901', 'nancy.hall@email.com', 62000),
+('James Miller', 'Manager', 11, '111 Oak St, Anytown', '1234567902', 'james.miller@email.com', 98000),
+('Susan Garcia', 'Specialist', 9, '222 Pine St, Anytown', '1234567903', 'susan.garcia@email.com', 80000),
+('Daniel Rodriguez', 'Engineer', 13, '333 Maple Ave, Anytown', '1234567904', 'daniel.rodriguez@email.com', 105000),
+('Linda Martinez', 'Director', 19, '444 Birch Dr, Anytown', '1234567905', 'linda.martinez@email.com', 170000),
+('Kevin Hernandez', 'Analyst', 2, '555 Cedar Rd, Anytown', '1234567906', 'kevin.hernandez@email.com', 55000),
+('Patricia Lopez', 'Manager', 16, '666 Willow Ct, Anytown', '1234567907', 'patricia.lopez@email.com', 120000),
+('Mark Gonzales', 'Engineer', 7, '777 Poplar Pl, Anytown', '1234567908', 'mark.gonzales@email.com', 90000),
+('Elizabeth Perez', 'Specialist', 1, '888 Spruce St, Anytown', '1234567909', 'elizabeth.perez@email.com', 50000),
+('Jason Sanchez', 'Director', 25, '999 Elm St, Anytown', '1234567910', 'jason.sanchez@email.com', 220000),
+('Maria Ramirez', 'Manager', 9, '100 Aspen Way, Anytown', '1234567911', 'maria.ramirez@email.com', 95000),
+('Joseph Torres', 'Analyst', 6, '110 Fir Rd, Anytown', '1234567912', 'joseph.torres@email.com', 68000),
+('Karen Bell', 'Engineer', 14, '120 Oak St, Anytown', '1234567913', 'karen.bell@email.com', 115000),
+('Gary Lewis', 'Specialist', 4, '130 Pine St, Anytown', '1234567914', 'gary.lewis@email.com', 60000),
+('Brenda Scott', 'Manager', 17, '140 Maple Ave, Anytown', '1234567915', 'brenda.scott@email.com', 125000),
+('Frank Green', 'Director', 20, '150 Birch Dr, Anytown', '1234567916', 'frank.green@email.com', 180000),
+('Kimberly Hill', 'Analyst', 8, '160 Cedar Rd, Anytown', '1234567917', 'kimberly.hill@email.com', 72000),
+('George Adams', 'Engineer', 11, '170 Willow Ct, Anytown', '1234567918', 'george.adams@email.com', 100000),
+('Donna Nelson', 'Manager', 5, '180 Poplar Pl, Anytown', '1234567919', 'donna.nelson@email.com', 70000),
+('Paul Baker', 'Specialist', 15, '190 Spruce St, Anytown', '1234567920', 'paul.baker@email.com', 105000),
+('Lisa Cook', 'Director', 13, '200 Elm St, Anytown', '1234567921', 'lisa.cook@email.com', 160000),
+('Brian King', 'Analyst', 10, '210 Aspen Way, Anytown', '1234567922', 'brian.king@email.com', 78000),
+('Deborah Wright', 'Engineer', 12, '220 Fir Rd, Anytown', '1234567923', 'deborah.wright@email.com', 112000),
+('Steven Carter', 'Manager', 6, '230 Oak St, Anytown', '1234567924', 'steven.carter@email.com', 85000),
+('Betty Mitchell', 'Specialist', 3, '240 Pine St, Anytown', '1234567925', 'betty.mitchell@email.com', 55000),
+('Ronald Phillips', 'Engineer', 18, '250 Maple Ave, Anytown', '1234567926', 'ronald.phillips@email.com', 130000),
+('Helen Foster', 'Director', 21, '260 Birch Dr, Anytown', '1234567927', 'helen.foster@email.com', 190000),
+('Edward Morgan', 'Analyst', 9, '270 Cedar Rd, Anytown', '1234567928', 'edward.morgan@email.com', 75000),
+('Dorothy Ross', 'Manager', 13, '280 Willow Ct, Anytown', '1234567929', 'dorothy.ross@email.com', 115000),
+('Patrick Turner', 'Specialist', 5, '290 Poplar Pl, Anytown', '1234567930', 'patrick.turner@email.com', 65000),
+('Cynthia Baker', 'Engineer', 16, '300 Spruce St, Anytown', '1234567931', 'cynthia.baker@email.com', 120000),
+('Arthur Young', 'Director', 14, '310 Elm St, Anytown', '1234567932', 'arthur.young@email.com', 165000),
+('Diana Walker', 'Analyst', 7, '320 Aspen Way, Anytown', '1234567933', 'diana.walker@email.com', 70000),
+('Roger White', 'Manager', 10, '330 Fir Rd, Anytown', '1234567934', 'roger.white@email.com', 95000),
+('Shirley Green', 'Specialist', 2, '340 Oak St, Anytown', '1234567935', 'shirley.green@email.com', 52000),
+('Jeffrey Hall', 'Engineer', 19, '350 Pine St, Anytown', '1234567936', 'jeffrey.hall@email.com', 140000),
+('Theresa Adams', 'Director', 17, '360 Maple Ave, Anytown', '1234567937', 'theresa.adams@email.com', 175000),
+('Dennis King', 'Analyst', 11, '370 Birch Dr, Anytown', '1234567938', 'dennis.king@email.com', 80000),
+('Pamela Wright', 'Manager', 8, '380 Cedar Rd, Anytown', '1234567939', 'pamela.wright@email.com', 90000);
+
+select * from custome;
+
+CREATE TABLE orders (
+    order_id serial primary key,
+    order_date date not null,
+    amount numeric(10, 2) not null,
+    customer_id int not null,
+    CONSTRAINT fk_customer
+        FOREIGN KEY (customer_id)
+        REFERENCES custome(id)
+);
+
+-- drop table orders;
+
+-- Insert sample order records
+INSERT INTO orders (order_date, amount, customer_id) VALUES
+('2024-01-15', 150.75, 1),
+('2024-01-18', 25.50, 2),
+('2024-01-19', 450.00, 1),
+('2024-01-20', 89.99, 3),
+('2024-01-22', 120.00, 4);
+
+select * from orders;
+
+
+
+select *
+from custome
+inner join orders
+on custome.id=orders.customer_id;
+
+select * 
+from custome as c
+inner join orders as o
+on c.id=o.customer_id;
+
+select *
+from custome as c
+left join orders as o
+on c.id=o.customer_id;
+
+select * 
+from custome as c
+right join orders as r
+on c.id=r.customer_id;
+
+
