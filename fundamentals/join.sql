@@ -108,4 +108,36 @@ from custome as c
 right join orders as r
 on c.id=r.customer_id;
 
+select *
+from custome
+inner join orders
+on custome.id=orders.customer_id;
+
+select * 
+from custome as c
+inner join orders as o
+on c.id=o.customer_id;
+
+select *
+from custome as c
+left join orders as o
+on c.id=o.customer_id;
+
+select * 
+from custome as c
+right join orders as r
+on c.id=r.customer_id;
+
+
+
+select *
+from custome as c
+full outer join orders as o
+on c.id=o.customer_id;
+
+select *
+from custome as c
+cross join orders as o;
+
+
 
