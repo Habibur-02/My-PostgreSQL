@@ -1,10 +1,8 @@
--- Students table তৈরি
 CREATE TABLE students (
     id SERIAL PRIMARY KEY,
     name VARCHAR(50) NOT NULL
 );
 
--- Students table এ data insert
 INSERT INTO students (name) VALUES
 ('Rahim'),
 ('Karim'),
