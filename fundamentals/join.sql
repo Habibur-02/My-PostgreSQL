@@ -139,5 +139,17 @@ select *
 from custome as c
 cross join orders as o;
 
+select * from custome;
+select * from orders;
+
+select c.position, count(c.experience) as count_experience
+
+from custome as c
+
+left join orders as o
+
+on c.id=o.order_id
+
+group by c.position;
 
 
