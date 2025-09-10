@@ -154,7 +154,6 @@ group by c.position;
 
 
 -- Drop the table if it already exists to ensure a clean slate
--- DROP TABLE IF EXISTS customers;
 
 -- Create the customers table as requested
 CREATE TABLE custome(
