@@ -435,6 +435,11 @@ join Activity as b
 on a.machine_id=b.machine_id and a.process_id=b.process_id and a.activity_type='start' and b.activity_type='end'
 group by a.machine_id;
 
+select e.name, b.bonus
+from Employee as e
+left join Bonus as b
+on e.empId=b.empId
+where b.bonus is null or b.bonus<1000;
 
 
 
