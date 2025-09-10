@@ -74,7 +74,6 @@ CREATE TABLE orders (
         REFERENCES custome(id)
 );
 
--- drop table orders;
 
 INSERT INTO orders (order_date, amount, customer_id) VALUES
 ('2024-01-15', 150.75, 1),
