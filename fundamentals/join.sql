@@ -5,7 +5,7 @@ CREATE TABLE custome(
     position varchar(10),
     experience int not null,
     address text,
-    phone bigint, -- Using bigint for phone numbers to prevent overflow
+    phone bigint,
     email text,
     salary int
 );
