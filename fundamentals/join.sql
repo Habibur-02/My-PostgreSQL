@@ -165,7 +165,6 @@ CREATE TABLE custome(
     salary int
 );
 
--- Insert 50 sample customer records
 INSERT INTO custome (name, position, experience, address, phone, email, salary) VALUES
 ('John Doe', 'Manager', 12, '123 Main St, Anytown', '1234567890', 'john.doe@email.com', 85000),
 ('Jane Smith', 'Analyst', 5, '456 Oak Ave, Anytown', '1234567891', 'jane.smith@email.com', 65000),
