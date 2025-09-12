@@ -153,7 +153,6 @@ group by c.position;
 
 -- Drop the table if it already exists to ensure a clean slate
 
--- Create the customers table as requested
 CREATE TABLE custome(
     id serial primary key,
     name varchar(50),
