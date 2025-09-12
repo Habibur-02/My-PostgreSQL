@@ -390,7 +390,6 @@ INSERT INTO Employees (emp_name, department_id, salary) VALUES
 ('Barkat', 3, 70000),
 ('Jobbar', NULL, 45000);
 
--- Departments টেবিলে ডেটা
 INSERT INTO Departments (dept_name, location) VALUES
 ('HR', 'Dhaka'),
 ('IT', 'Chittagong'),
