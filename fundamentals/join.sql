@@ -231,7 +231,6 @@ CREATE TABLE orders (
 
 -- drop table orders;
 
--- Insert sample order records
 INSERT INTO orders (order_date, amount, customer_id) VALUES
 ('2024-01-15', 150.75, 1),
 ('2024-01-18', 25.50, 2),
