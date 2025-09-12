@@ -292,26 +292,22 @@ group by c.position;
 
 
 
--- Students table তৈরি
 CREATE TABLE students (
     id SERIAL PRIMARY KEY,
     name VARCHAR(50) NOT NULL
 );
 
--- Students table এ data insert
 INSERT INTO students (name) VALUES
 ('Rahim'),
 ('Karim'),
 ('Anika');
 
--- Courses table তৈরি
 CREATE TABLE course (
     id SERIAL PRIMARY KEY,
     course_name VARCHAR(100) NOT NULL,
     level VARCHAR(20) NOT NULL
 );
 
--- Courses table এ data insert
 INSERT INTO course (course_name, level) VALUES
 ('Math', 'Basic'),
 ('Physics', 'Basic'),
@@ -341,7 +337,6 @@ CREATE TABLE Weather (
     temperature INTEGER
 );
 
--- Insert the provided data into the Weather table
 INSERT INTO Weather (recordDate, temperature) VALUES
 ('2015-01-01', 10),
 ('2015-01-02', 25),
