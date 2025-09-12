@@ -381,7 +381,6 @@ CREATE TABLE Departments (
     location VARCHAR(50)
 );
 
--- Employees টেবিলে ডেটা
 INSERT INTO Employees (emp_name, department_id, salary) VALUES
 ('রahim', 1, 50000),
 ('Karim', 1, 60000),
