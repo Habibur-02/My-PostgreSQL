@@ -367,7 +367,6 @@ from Weather as t
 full outer join Weather as yesterday
 on t.id=yesterday.id;
 
--- টেবিল ১: Employees
 CREATE TABLE Employees (
     emp_id SERIAL PRIMARY KEY,
     emp_name VARCHAR(50),
