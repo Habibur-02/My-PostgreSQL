@@ -372,7 +372,6 @@ CREATE TABLE Employees (
     salary DECIMAL(10,2)
 );
 
--- টেবিল ২: Departments
 CREATE TABLE Departments (
     dept_id SERIAL PRIMARY KEY,
     dept_name VARCHAR(50),
