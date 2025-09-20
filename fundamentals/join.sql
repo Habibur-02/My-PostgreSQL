@@ -11,7 +11,7 @@ CREATE TABLE custome(
 );
 
 INSERT INTO custome (name, position, experience, address, phone, email, salary) VALUES
-('John Doe', 'Manager', 12, '123 Main St, Anytown', '1234567890', 'john.doe@email.com', 85000),
+
 ('Jane Smith', 'Analyst', 5, '456 Oak Ave, Anytown', '1234567891', 'jane.smith@email.com', 65000),
 ('Peter Jones', 'Engineer', 8, '789 Pine Ln, Anytown', '1234567892', 'peter.jones@email.com', 92000),
 ('Sarah Lee', 'Director', 18, '101 Maple Blvd, Anytown', '1234567893', 'sarah.lee@email.com', 150000),
