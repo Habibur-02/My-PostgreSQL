@@ -469,4 +469,42 @@ INSERT INTO Examinations (student_id, subject_name) VALUES
 (1, 'Math');
 
 
+-- Create a table with a JSONB column
+CREATE TABLE products (
+    product_id SERIAL PRIMARY KEY,
+    product_name TEXT NOT NULL,
+    details JSONB
+);
+
+-- Insert data with JSONB
+INSERT INTO products (product_name, details) VALUES
+('Smartwatch', '{
+    "brand": "TechCo",
+    "features": ["GPS", "Heart Rate Monitor", "Waterproof"],
+    "specs": {
+        "display": "OLED",
+        "battery_life_hours": 48
+    }
+}'),
+('Bluetooth Headphones', '{
+    "brand": "AudioPro",
+    "features": ["Noise Cancellation"],
+    "specs": {
+        "color": "Black",
+        "connection_type": "Bluetooth 5.0"
+    }
+}');
+
+-- Query data from the JSONB column
+-- Use -> to get a JSON element, and ->> to get a JSON element as text
+SELECT
+    product_name,
+    details -> 'brand' AS brand_json,
+    details ->> 'brand' AS brand_text,
+    details -> 'specs' ->> 'color' AS color
+FROM products
+WHERE details @> '{"features": ["GPS"]}';
+
+
+
 
